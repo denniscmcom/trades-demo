@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct Explorer: View {
+    let jsonManager = JsonManager()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                let mostActive: [CompanyModel] = jsonManager.read("MostActive.json")
+                CompanyRow(companies: mostActive, title: "Most Active")
+                
+                let gainer: [CompanyModel] = jsonManager.read("Gainers.json")
+                CompanyRow(companies: gainer, title: "Gainers")
+                
+                let losers: [CompanyModel] = jsonManager.read("Losers.json")
+                CompanyRow(companies: losers, title: "Losers")
+            }
+            .navigationTitle("Explorer")
+        }
     }
 }
 

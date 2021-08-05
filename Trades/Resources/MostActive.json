@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Jazzy",
+        "price": 64,
+        "symbol": "BTZ"
+    },
+    {
+        "name": "Kwinu",
+        "price": 8,
+        "symbol": "OACQ"
+    },
+    {
+        "name": "Ooba",
+        "price": 18,
+        "symbol": "NIHD"
+    },
+    {
+        "name": "Linktype",
+        "price": 54,
+        "symbol": "EACQ"
+    },
+    {
+        "name": "Mydeo",
+        "price": 65,
+        "symbol": "SO"
+    },
+    {
+        "name": "Yamia",
+        "price": 74,
+        "symbol": "REXR"
+    },
+    {
+        "name": "Camido",
+        "price": 37,
+        "symbol": "NTG"
+    },
+    {
+        "name": "Mudo",
+        "price": 96,
+        "symbol": "ARL"
+    },
+    {
+        "name": "Realblab",
+        "price": 67,
+        "symbol": "IMRNW"
+    },
+    {
+        "name": "Skipstorm",
+        "price": 19,
+        "symbol": "DORM"
+    }
+]

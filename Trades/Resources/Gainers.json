@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Jaxnation",
+        "price": 48,
+        "symbol": "NTES"
+    },
+    {
+        "name": "Jamia",
+        "price": 51,
+        "symbol": "PSCH"
+    },
+    {
+        "name": "Thoughtbeat",
+        "price": 26,
+        "symbol": "WVVIP"
+    },
+    {
+        "name": "Browsezoom",
+        "price": 41,
+        "symbol": "AFAM"
+    },
+    {
+        "name": "Skinder",
+        "price": 6,
+        "symbol": "CSL"
+    },
+    {
+        "name": "Skimia",
+        "price": 82,
+        "symbol": "HABT"
+    },
+    {
+        "name": "Blogpad",
+        "price": 35,
+        "symbol": "TRNO^A.CL"
+    },
+    {
+        "name": "Brainlounge",
+        "price": 87,
+        "symbol": "ZUMZ"
+    },
+    {
+        "name": "Thoughtbridge",
+        "price": 10,
+        "symbol": "AMBC"
+    },
+    {
+        "name": "Myworks",
+        "price": 75,
+        "symbol": "CRT"
+    }
+]

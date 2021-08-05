@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,17 @@
 		95189E0226BBF70C0024C858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95189E0126BBF70C0024C858 /* Preview Assets.xcassets */; };
 		95189E0A26BBF8870024C858 /* Explorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E0926BBF8870024C858 /* Explorer.swift */; };
 		95189E0C26BBF89E0024C858 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E0B26BBF89E0024C858 /* Details.swift */; };
+		95189E0F26BBFD4A0024C858 /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 95189E0E26BBFD4A0024C858 /* StockCharts */; };
+		95189E1526BC01580024C858 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E1426BC01580024C858 /* CompanyModel.swift */; };
+		95189E1826BC01BD0024C858 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E1726BC01BD0024C858 /* JsonManager.swift */; };
+		95189E1A26BC02360024C858 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E1926BC02360024C858 /* Company.swift */; };
+		95189E1C26BC0A930024C858 /* RandomDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E1B26BC0A930024C858 /* RandomDataManager.swift */; };
+		95189E1E26BC0DC70024C858 /* MostActive.json in Resources */ = {isa = PBXBuildFile; fileRef = 95189E1D26BC0DC70024C858 /* MostActive.json */; };
+		95189E2226BC0E080024C858 /* Gainers.json in Resources */ = {isa = PBXBuildFile; fileRef = 95189E2126BC0E080024C858 /* Gainers.json */; };
+		95189E2426BC0E170024C858 /* Losers.json in Resources */ = {isa = PBXBuildFile; fileRef = 95189E2326BC0E170024C858 /* Losers.json */; };
+		95189E2626BC0E4A0024C858 /* Popular.json in Resources */ = {isa = PBXBuildFile; fileRef = 95189E2526BC0E4A0024C858 /* Popular.json */; };
+		95189E2826BC0EBE0024C858 /* CompanyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E2726BC0EBE0024C858 /* CompanyRow.swift */; };
+		95189E2A26BC21230024C858 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95189E2926BC21230024C858 /* Popular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,16 @@
 		95189E0326BBF70C0024C858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95189E0926BBF8870024C858 /* Explorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explorer.swift; sourceTree = "<group>"; };
 		95189E0B26BBF89E0024C858 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		95189E1426BC01580024C858 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		95189E1726BC01BD0024C858 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		95189E1926BC02360024C858 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		95189E1B26BC0A930024C858 /* RandomDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDataManager.swift; sourceTree = "<group>"; };
+		95189E1D26BC0DC70024C858 /* MostActive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostActive.json; sourceTree = "<group>"; };
+		95189E2126BC0E080024C858 /* Gainers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Gainers.json; sourceTree = "<group>"; };
+		95189E2326BC0E170024C858 /* Losers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Losers.json; sourceTree = "<group>"; };
+		95189E2526BC0E4A0024C858 /* Popular.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Popular.json; sourceTree = "<group>"; };
+		95189E2726BC0EBE0024C858 /* CompanyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRow.swift; sourceTree = "<group>"; };
+		95189E2926BC21230024C858 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95189E0F26BBFD4A0024C858 /* StockCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +81,13 @@
 				95189DFA26BBF70B0024C858 /* TradesApp.swift */,
 				95189DFC26BBF70B0024C858 /* ContentView.swift */,
 				95189E0926BBF8870024C858 /* Explorer.swift */,
+				95189E2926BC21230024C858 /* Popular.swift */,
 				95189E0B26BBF89E0024C858 /* Details.swift */,
 				95189DFE26BBF70C0024C858 /* Assets.xcassets */,
 				95189E0326BBF70C0024C858 /* Info.plist */,
+				95189E1626BC01AB0024C858 /* Helpers */,
+				95189E1326BC01460024C858 /* Models */,
+				95189E1026BC01240024C858 /* Resources */,
 				95189E0026BBF70C0024C858 /* Preview Content */,
 			);
 			path = Trades;
@@ -73,6 +99,36 @@
 				95189E0126BBF70C0024C858 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95189E1026BC01240024C858 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95189E1D26BC0DC70024C858 /* MostActive.json */,
+				95189E2126BC0E080024C858 /* Gainers.json */,
+				95189E2326BC0E170024C858 /* Losers.json */,
+				95189E2526BC0E4A0024C858 /* Popular.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95189E1326BC01460024C858 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95189E1426BC01580024C858 /* CompanyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95189E1626BC01AB0024C858 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95189E1726BC01BD0024C858 /* JsonManager.swift */,
+				95189E1926BC02360024C858 /* Company.swift */,
+				95189E1B26BC0A930024C858 /* RandomDataManager.swift */,
+				95189E2726BC0EBE0024C858 /* CompanyRow.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +147,9 @@
 			dependencies = (
 			);
 			name = Trades;
+			packageProductDependencies = (
+				95189E0E26BBFD4A0024C858 /* StockCharts */,
+			);
 			productName = Trades;
 			productReference = 95189DF726BBF70B0024C858 /* Trades.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 95189DEE26BBF70B0024C858;
+			packageReferences = (
+				95189E0D26BBFD4A0024C858 /* XCRemoteSwiftPackageReference "stock-charts" */,
+			);
 			productRefGroup = 95189DF826BBF70B0024C858 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,7 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95189E0226BBF70C0024C858 /* Preview Assets.xcassets in Resources */,
+				95189E2626BC0E4A0024C858 /* Popular.json in Resources */,
+				95189E2426BC0E170024C858 /* Losers.json in Resources */,
+				95189E2226BC0E080024C858 /* Gainers.json in Resources */,
 				95189DFF26BBF70C0024C858 /* Assets.xcassets in Resources */,
+				95189E1E26BC0DC70024C858 /* MostActive.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95189E1C26BC0A930024C858 /* RandomDataManager.swift in Sources */,
+				95189E2A26BC21230024C858 /* Popular.swift in Sources */,
 				95189E0A26BBF8870024C858 /* Explorer.swift in Sources */,
+				95189E2826BC0EBE0024C858 /* CompanyRow.swift in Sources */,
 				95189DFD26BBF70B0024C858 /* ContentView.swift in Sources */,
 				95189E0C26BBF89E0024C858 /* Details.swift in Sources */,
+				95189E1826BC01BD0024C858 /* JsonManager.swift in Sources */,
+				95189E1A26BC02360024C858 /* Company.swift in Sources */,
 				95189DFB26BBF70B0024C858 /* TradesApp.swift in Sources */,
+				95189E1526BC01580024C858 /* CompanyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95189E0D26BBFD4A0024C858 /* XCRemoteSwiftPackageReference "stock-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/denniscm190/stock-charts.git";
+			requirement = {
+				branch = development;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95189E0E26BBFD4A0024C858 /* StockCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95189E0D26BBFD4A0024C858 /* XCRemoteSwiftPackageReference "stock-charts" */;
+			productName = StockCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95189DEF26BBF70B0024C858 /* Project object */;
 }
