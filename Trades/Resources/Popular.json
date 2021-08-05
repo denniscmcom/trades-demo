@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Tagpad",
+        "price": 68,
+        "symbol": "HRB"
+    },
+    {
+        "name": "Kare",
+        "price": 25,
+        "symbol": "ARCW"
+    },
+    {
+        "name": "Mita",
+        "price": 98,
+        "symbol": "TICCL"
+    },
+    {
+        "name": "Skaboo",
+        "price": 35,
+        "symbol": "CTAA"
+    },
+    {
+        "name": "Demimbu",
+        "price": 81,
+        "symbol": "NSH"
+    },
+    {
+        "name": "Fliptune",
+        "price": 53,
+        "symbol": "TNXP"
+    },
+    {
+        "name": "Wikido",
+        "price": 25,
+        "symbol": "LNC.WS"
+    },
+    {
+        "name": "Tanoodle",
+        "price": 98,
+        "symbol": "BLRX"
+    },
+    {
+        "name": "Jaxbean",
+        "price": 99,
+        "symbol": "HIX"
+    },
+    {
+        "name": "Babbleset",
+        "price": 71,
+        "symbol": "ALL^B"
+    }
+]
