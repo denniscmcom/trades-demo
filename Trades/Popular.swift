@@ -28,26 +28,11 @@ struct Popular: View {
                         }
                         .padding(.trailing)
                         
-                        let data = randomDataManager.create()
-                        let lineChartStyle = LineChartStyle(
-                            labelColor: Color(.systemBlue),
-                            indicatorPointColor: Color(.systemTeal),
-                            showingIndicatorLineColor: Color(.systemBlue),
-                            flatTrendLineColor: Color(.systemTeal),
-                            uptrendLineColor: Color(.systemGreen),
-                            downtrendLineColor: Color(.systemRed)
-                        )
-                        
                         Spacer()
                         
-                        LineChartView(
-                            data: data,
-                            dates: nil,
-                            hours: nil,
-                            dragGesture: false,
-                            style: lineChartStyle
-                        )
-                        .frame(width: 150)
+                        let prices = randomDataManager.create()
+                        LineChartView(lineChartController: LineChartController(prices: prices))
+                            .frame(width: 150)
                         
                             Text("\(company.price, specifier: "%.2f")")
                                 .fontWeight(.semibold)

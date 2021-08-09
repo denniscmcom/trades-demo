@@ -29,24 +29,14 @@ struct Details: View {
                                     .fontWeight(.semibold)
                                     .padding()
                                 
-                                let data = randomDataManager.create()
-                                let lineChartStyle = LineChartStyle(
-                                    labelColor: Color(.systemBlue),
-                                    indicatorPointColor: Color(.systemTeal),
-                                    showingIndicatorLineColor: Color(.systemBlue),
-                                    flatTrendLineColor: Color(.systemTeal),
-                                    uptrendLineColor: Color(.systemGreen),
-                                    downtrendLineColor: Color(.systemRed)
-                                )
-                                
                                 LineChartView(
-                                    data: data,
-                                    dates: nil,
-                                    hours: nil,
-                                    dragGesture: true,
-                                    style: lineChartStyle
+                                    lineChartController:
+                                        LineChartController(
+                                            prices: randomDataManager.create(),
+                                            dragGesture: true
+                                        )
                                 )
-                                .padding(.bottom)
+                                    .padding(.bottom)
                             }
                             ,alignment: .leading
                         )

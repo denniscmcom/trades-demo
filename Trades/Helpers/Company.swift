@@ -37,24 +37,9 @@ struct Company: View {
                     
                     Spacer()
                     
-                    let data = randomDataManager.create()
-                    let lineChartStyle = LineChartStyle(
-                        labelColor: Color(.systemBlue),
-                        indicatorPointColor: Color(.systemTeal),
-                        showingIndicatorLineColor: Color(.systemBlue),
-                        flatTrendLineColor: Color(.systemTeal),
-                        uptrendLineColor: Color(.systemGreen),
-                        downtrendLineColor: Color(.systemRed)
-                    )
-                    
-                    LineChartView(
-                        data: data,
-                        dates: nil,
-                        hours: nil,
-                        dragGesture: false,
-                        style: lineChartStyle
-                    )
-                    .padding(.bottom, 5)
+                    let prices = randomDataManager.create()
+                    LineChartView(lineChartController: LineChartController(prices: prices))
+                        .padding(.bottom, 5)
                 }
                 , alignment: .leading
             )
