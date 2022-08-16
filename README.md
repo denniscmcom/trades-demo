@@ -1,4 +1,4 @@
-# trades-demo
+# trades-demo [DEPRECATED]
 
 **Trades** is a demo app fully written in SwiftUI to demostrate some uses cases of the [StockCharts framework](https://github.com/denniscm190/stock-charts).
 
